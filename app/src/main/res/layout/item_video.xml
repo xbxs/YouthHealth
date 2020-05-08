@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/player_lsit_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:background="@color/main_bg_color"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_video_playnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:textSize="20sp"
+            android:text="空城旧梦" />
+
+
+    </RelativeLayout>
+</LinearLayout>

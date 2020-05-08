@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="100dp"
+    android:padding="5dp"
+    android:id="@+id/layout_food"
+    android:background="@color/main_bg_color"
+    >
+    <ImageView
+        android:id="@+id/layout_picture"
+        android:layout_width="150dp"
+        android:scaleType="centerCrop"
+        android:layout_height="100dp"
+        android:src="@drawable/food_list_2"
+        />
+    <TextView
+        android:id="@+id/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:maxLines="2"
+        android:text="秋冬养生一定要知道的8款五谷杂粮"
+        android:layout_toRightOf="@id/layout_picture"
+        />
+    <TextView
+        android:id="@+id/layout_readnumber"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="阅读量"
+        android:textSize="15sp"
+        android:layout_alignBottom="@id/layout_picture"
+        android:layout_toRightOf="@id/layout_picture"
+        >
+
+    </TextView>
+
+</RelativeLayout>

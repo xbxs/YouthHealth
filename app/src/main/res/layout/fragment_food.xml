@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FoodFragment"
+    android:background="@color/main_bg_color"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_food_guide"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+        </androidx.viewpager.widget.ViewPager>
+        <LinearLayout
+            android:id="@+id/ll_food_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_alignBottom="@id/vp_food_guide"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/vp_food_guide"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            >
+            <ListView
+                android:id="@+id/lv_dynamic"
+                android:padding="5dp"
+                android:background="@color/main_bg_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

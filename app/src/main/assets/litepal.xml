@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding="utf-8" ?>
+<litepal>
+
+    <dbname value ="dbnews">
+
+    </dbname>
+    <version value="1">
+
+    </version>
+
+    <list>
+        <mapping class = "com.example.youthhealth.entity.DBNews"></mapping>
+    </list>
+</litepal>

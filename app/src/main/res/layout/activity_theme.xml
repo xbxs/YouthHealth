@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThemeActivity"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:padding="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="主题"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RadioGroup
+            android:id="@+id/rg_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RadioButton
+                android:id="@+id/rb_light"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="白天模式"
+                android:textSize="20dp"
+                android:paddingLeft="25dp"
+                />
+            <RadioButton
+                android:id="@+id/rb_night"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="夜间模式"
+                android:shadowColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:paddingLeft="25dp"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动跟随系统深色模式"
+            android:textSize="20sp"
+            />
+        <Switch
+            android:id="@+id/sw_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:shadowColor="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
